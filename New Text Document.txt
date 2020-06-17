@@ -1,0 +1,45 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		System.out.println("studentPercentage [0]+[1]+[2]+[3]+[4]+[5]+[6]+[7]+[8]+[9]");
+	    
+		int [] studentPercentage = {70,90,30,90,80,84,69,92,63,45};
+		char [] letterGrades = new char [10];
+		for(int i=0 ; i<=10 ; i++){
+		    letterGrades [i] = max(studentPercentage[i]);
+		    System.out.println(letterGrades[i]);
+		}
+		
+}
+
+   
+   public static char max (int o){
+       
+       if (o>=90) 
+       return 'A';
+       
+       else if (o>=80) 
+       return 'B';
+       
+       else if (o>=70) 
+       return 'C';
+       
+       else if (o>=60) 
+       return 'D';
+       
+       else
+       return 'F';
+       
+       
+     
+       
+  
+       
+       
+	}
+	
+	
+	
+	
